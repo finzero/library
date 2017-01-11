@@ -1,0 +1,38 @@
+[{
+    "name": "title",
+    "dbType": "string,100",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": true,
+    "fillable": true,
+    "primary": false
+},{
+    "name": "description",
+    "dbType": "text",
+    "htmlType": "textarea",
+    "searchable": true,
+    "fillable": true,
+    "primary": false
+},{
+    "name": "author",
+    "dbType": "string,100",
+    "htmlType": "text",
+    "searchable": true,
+    "fillable": true,
+    "primary": false
+}, {
+    "name": "year",
+    "dbType": "string,100",
+    "htmlType": "text",
+    "searchable": true,
+    "fillable": true,
+    "primary": false
+}, {
+    "name": "image",
+    "dbType": "text",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": false,
+    "fillable": true,
+    "primary": false
+}]
