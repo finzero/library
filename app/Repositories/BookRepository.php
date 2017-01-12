@@ -12,9 +12,9 @@ class BookRepository extends BaseRepository
      */
     protected $fieldSearchable = [
         'title',
-        'description',
         'author',
-        'year'
+        'year_publish',
+        'category'
     ];
 
     /**

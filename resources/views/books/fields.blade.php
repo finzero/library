@@ -16,16 +16,23 @@
     {!! Form::text('author', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Year Field -->
+<!-- Year Publish Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('year', 'Year:') !!}
-    {!! Form::text('year', null, ['class' => 'form-control']) !!}
+    {!! Form::label('year_publish', 'Year Publish:') !!}
+    {!! Form::number('year_publish', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Image Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('image', 'Image:') !!}
-    {!! Form::text('image', null, ['class' => 'form-control']) !!}
+    {!! Form::file('image') !!}
+</div>
+<div class="clearfix"></div>
+
+<!-- Category Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('category', 'Category:') !!}
+    {!! Form::text('category', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Submit Field -->

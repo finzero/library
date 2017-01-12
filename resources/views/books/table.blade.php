@@ -3,8 +3,9 @@
         <th>Title</th>
         <th>Description</th>
         <th>Author</th>
-        <th>Year</th>
+        <th>Year Publish</th>
         <th>Image</th>
+        <th>Category</th>
         <th colspan="3">Action</th>
     </thead>
     <tbody>
@@ -13,8 +14,9 @@
             <td>{!! $book->title !!}</td>
             <td>{!! $book->description !!}</td>
             <td>{!! $book->author !!}</td>
-            <td>{!! $book->year !!}</td>
+            <td>{!! $book->year_publish !!}</td>
             <td>{!! $book->image !!}</td>
+            <td>{!! $book->category !!}</td>
             <td>
                 {!! Form::open(['route' => ['books.destroy', $book->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

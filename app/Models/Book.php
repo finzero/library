@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class Book
  * @package App\Models
- * @version January 11, 2017, 9:46 am UTC
+ * @version January 12, 2017, 2:58 am UTC
  */
 class Book extends Model
 {
@@ -24,8 +24,9 @@ class Book extends Model
         'title',
         'description',
         'author',
-        'year',
-        'image'
+        'year_publish',
+        'image',
+        'category'
     ];
 
     /**
@@ -37,8 +38,9 @@ class Book extends Model
         'title' => 'string',
         'description' => 'string',
         'author' => 'string',
-        'year' => 'string',
-        'image' => 'string'
+        'year_publish' => 'integer',
+        'image' => 'string',
+        'category' => 'string'
     ];
 
     /**
@@ -47,8 +49,7 @@ class Book extends Model
      * @var array
      */
     public static $rules = [
-        'title' => 'required',
-        'image' => 'required'
+        'title' => 'required'
     ];
 
     
